@@ -1,0 +1,57 @@
+// -----------------------Location---------------------------
+.location {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+  font-size: 2rem;
+  color: $primaryColor;
+  cursor: pointer;
+  animation: jump 1s ease-in-out alternate-reverse infinite;
+  @keyframes jump {
+    0% {
+      transform: translateY(0rem);
+    }
+    100% {
+      transform: translateY(1rem);
+    }
+  }
+}
+//------------------------Map-----------------------------
+.map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  @media screen and (max-width: 850px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .close-map {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    transform: translateY(-2.5rem);
+    background: none;
+    border: none;
+    color: $primaryColor;
+    font-size: 2rem;
+    cursor: pointer;
+    @media screen and (max-width: 600px) {
+      transform: translateY(0);
+      padding-right: 5px;
+      color: black;
+    }
+    &:focus {
+      outline-style: none;
+    }
+  }
+}

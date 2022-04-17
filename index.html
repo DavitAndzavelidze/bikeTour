@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/bpg-nino-mtavruli.min.css" />
+    <script
+      src="https://kit.fontawesome.com/ead75f6eaa.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Bike Tour</title>
+  </head>
+  <body>
+    <div class="nav_container">
+      <img class="logo" src="./imgs/logo.svg" alt="logo" />
+      <ul class="list_box">
+        <li>Home</li>
+        <li>Service</li>
+        <li>Tours</li>
+        <li>Contact</li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- Main Container -->
+    <main>
+      <div class="main_content">
+        <h1 class="main_title">Lorem, ipsum dolor sit amet!</h1>
+        <p class="main_text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, amet.
+        </p>
+        <a href="#" class="button">Let's Go</a>
+      </div>
+    </main>
+    <!-- Image Slider -->
+    <div class="slider">
+      <div class="slides">
+        <!-- Radio Buttons -->
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+        <div class="slide first">
+          <img src="./imgs/1.jpg" alt="1" />
+        </div>
+        <div class="slide">
+          <img src="./imgs/2.jpg" alt="2" />
+        </div>
+        <div class="slide">
+          <img src="./imgs/3.jpg" alt="3" />
+        </div>
+        <div class="slide">
+          <img src="./imgs/4.jpg" alt="4" />
+        </div>
+        <!-- Automatic Navigation -->
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!-- Manual Navigation -->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="icons">
+        <i class="fas fa-map-marker-alt location"></i>
+        <div class="map hidden">
+          <button class="close-map">&times;</button>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1489.4670758057694!2d44.75332395809538!3d41.700357197438876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4044734cd4b3e74b%3A0x479bb77b2a3555b9!2sTurtle%20Lake!5e0!3m2!1sen!2sge!4v1650204867779!5m2!1sen!2sge"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
