@@ -26,18 +26,18 @@ const btnOpenPhoto = document.querySelectorAll(".setting");
 const btnbg = document.querySelector(".slider");
 
 // Open Photos Function
-const openPhoto = function () {
-  photos.classList.remove("hidden");
-};
+// const openPhoto = function () {
+//   photos.classList.remove("hidden");
+// };
 
 // Close Photos Function
-const closePhoto = function () {
-  photos.classList.add("hidden");
-};
+// const closePhoto = function () {
+//   photos.classList.add("hidden");
+// };
 
-for (let i = 0; i < btnOpenPhoto.length; i++)
-  btnOpenPhoto[i].addEventListener("click", openPhoto);
-btnbg.addEventListener("click", closePhoto);
+// for (let i = 0; i < btnOpenPhoto.length; i++)
+//   btnOpenPhoto[i].addEventListener("click", openPhoto);
+// btnbg.addEventListener("click", closePhoto);
 // bgForm.addEventListener("click", closePhoto);
 
 // Maps
