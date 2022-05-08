@@ -4,6 +4,31 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  cursor: grab;
+}
+#cursor {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    45deg,
+    rgba(105, 105, 255, 0.7),
+    rgba(198, 105, 255, 0.7)
+  );
+  animation: hue-rotate 2s linear infinite alternate;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  transition: all 0.5s ease-out;
+  z-index: -1;
+}
+div:hover ~ #cursor {
+  transform: scale(0.5);
+}
+
+@keyframes hue-rotate {
+  to {
+    filter: hue-rotate(90deg);
+  }
 }
 ul {
   list-style: none;

@@ -51,6 +51,8 @@ a {
 a.button {
   color: rgba(180, 222, 191, 0.6);
   box-shadow: rgba(180, 222, 191, 0.4) 0 0px 0px 2px inset;
+  z-index: 999;
+  cursor: pointer;
 }
 
 a.button:hover {

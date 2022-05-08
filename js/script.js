@@ -10,35 +10,9 @@ const openRules = function () {
   overlay.classList.remove("hidden");
 };
 
-// close function
-// const closeRules = function () {
-//   rules.classList.add("hidden");
-//   overlay.classList.add("hidden");
-// };
-
-// for (let i = 0; i < btnShowRules.length; i++)
-//   btnShowRules[i].addEventListener("click", openRules);
-// btnCloseRules.addEventListener("click", closeRules);
-// overlay.addEventListener("click", closeRules);
-
 // Photos Variables
 const btnOpenPhoto = document.querySelectorAll(".setting");
 const btnbg = document.querySelector(".slider");
-
-// Open Photos Function
-// const openPhoto = function () {
-//   photos.classList.remove("hidden");
-// };
-
-// Close Photos Function
-// const closePhoto = function () {
-//   photos.classList.add("hidden");
-// };
-
-// for (let i = 0; i < btnOpenPhoto.length; i++)
-//   btnOpenPhoto[i].addEventListener("click", openPhoto);
-// btnbg.addEventListener("click", closePhoto);
-// bgForm.addEventListener("click", closePhoto);
 
 // Maps
 const btnShowMap = document.querySelectorAll(".location");
@@ -69,3 +43,11 @@ setInterval(function () {
     counter = 1;
   }
 }, 5000);
+
+// Cursor Style
+let cursor = document.querySelector("#cursor");
+document.onmousemove = function (e) {
+  cursor.style.left = e.pageX - 25 + "px";
+  cursor.style.top = e.pageY - 25 + "px";
+  cursor.style.display = "block";
+};
